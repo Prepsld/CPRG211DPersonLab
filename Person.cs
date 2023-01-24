@@ -36,9 +36,7 @@ namespace CPRG_213lab
         {
             string formatted = "";
 
-            formatted += "ID: " + id + "\n";
-            formatted += "First Name: " + firstName + "\n";
-
+            formatted += "ID: " + id + "\n" + "First Name: " + firstName + "\n" + "Last Name: " + lastName + "\n" + "Favorite Color: " + favoriteColor + "\n" + "Age: " + age + "\n" + "Is working: " + isWorking;
 
             return formatted;
         }
