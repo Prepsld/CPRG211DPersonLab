@@ -40,6 +40,38 @@ namespace CPRG_213lab
 
             return formatted;
         }
+        
+        public string DisplayPersonInfo()
+        {
+            string personInfo = "";
+
+            personInfo += "Name = " + firstName + " " + lastName;
+
+            return personInfo;
+        }
+        
+        public string PersonId()
+        {
+            string displayed = "";
+
+            displayed += id + ": " + firstName + " " + lastName + "'s favorite color is " + favoriteColor;
+
+            return displayed;
+        }
+
+        public string ChangeFavoriteColor()
+        {
+            this.favoriteColor = "White";
+
+            return PersonId();
+        }
+
+        public string GetAgeInTenYears()
+        {
+            this.age += 10;
+            string agedUp = firstName + " " + lastName + "'s Age in 10 years is: " + age;
+            return agedUp;
+        } 
     }
 }
 
@@ -60,3 +92,6 @@ namespace CPRG_213lab
 
 
 // Relation Class - skip this part for now
+
+
+//Get is for field, set is setting value of field
