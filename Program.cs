@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CPRG211DPersonLab;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,13 +18,20 @@ namespace CPRG_213lab
 
             double average = Convert.ToDouble(person1.Age + person2.Age + person3.Age + person4.Age) / 4;
 
-            Console.WriteLine(person2.PersonId());
+            string ginaInfo = person2.PersonId();
+            Console.WriteLine(ginaInfo);
 
-            Console.WriteLine(person3.ToString());
+            string mikeInfo = person3.ToString();
+            Console.WriteLine(mikeInfo);
 
-            Console.WriteLine(person1.ChangeFavoriteColor());
+            person1.ChangeFavoriteColor();
+            Console.WriteLine(person1.PersonId());
 
-            Console.WriteLine(person4.GetAgeInTenYears());
+            string newAge = person4.GetAgeInTenYears();
+            Console.WriteLine(newAge);
+
+            Relation relation1 = new Relation("Sister", person2, "Sister", person4);
+            Relation relation2 = new Relation("Brother", person1, "Brother", person3);
 
             Console.WriteLine("Average age is: " + average);
 

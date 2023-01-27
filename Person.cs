@@ -14,6 +14,7 @@ namespace CPRG_213lab
         private int age;
         private string favoriteColor;
         private bool isWorking;
+        // These are all private for encapsulation, and to hide the data.
 
         public int Id { get => id; set => id = value; }
         public string FirstName { get => firstName; set => firstName = value; }
@@ -21,6 +22,7 @@ namespace CPRG_213lab
         public int Age { get => age; set => age = value; }
         public string FavoriteColor { get => favoriteColor; set => favoriteColor = value; }
         public bool IsWorking { get => isWorking; set => isWorking = value; }
+        // These are the properties, and they are what provide the indirect access to the fields above in other lines of code.
 
         public Person(int id, string firstName, string lastName, int age, string favoriteColor, bool isWorking)
         {
@@ -59,17 +61,15 @@ namespace CPRG_213lab
             return displayed;
         }
 
-        public string ChangeFavoriteColor()
+        public void ChangeFavoriteColor()
         {
-            this.favoriteColor = "White";
-
-            return PersonId();
+            favoriteColor = "White";
         }
 
         public string GetAgeInTenYears()
         {
-            this.age += 10;
-            string agedUp = firstName + " " + lastName + "'s Age in 10 years is: " + age;
+            int newAge = age + 10;
+            string agedUp = firstName + " " + lastName + "'s Age in 10 years is: " + newAge;
             return agedUp;
         } 
     }
@@ -90,8 +90,8 @@ namespace CPRG_213lab
  * tostringmethod: displays all person object information as a list
  */
 
-
+//string.Format(asdasdasd {0} etc"
 // Relation Class - skip this part for now
-
-
+//&& means AND statement
+//format = $("Id = {id})
 //Get is for field, set is setting value of field
