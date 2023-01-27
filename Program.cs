@@ -16,8 +16,6 @@ namespace CPRG_213lab
             Person person3 = new Person(3, "Mike", "Briscoe", 45, "Blue", true);
             Person person4 = new Person(4, "Mary", "Beals", 28, "Yellow", true);
 
-            double average = Convert.ToDouble(person1.Age + person2.Age + person3.Age + person4.Age) / 4;
-
             string ginaInfo = person2.PersonId();
             Console.WriteLine(ginaInfo);
 
@@ -32,10 +30,22 @@ namespace CPRG_213lab
 
             Relation relation1 = new Relation("Sister", person2, "Sister", person4);
             Relation relation2 = new Relation("Brother", person1, "Brother", person3);
+            Console.WriteLine(relation1);
+            Console.WriteLine(relation2);
 
+            List<Person> people = new List<Person>();
+            people.Add(person1);
+            people.Add(person2);
+            people.Add(person3);
+            people.Add(person4);
+
+            int sum = 0;
+            foreach (Person person in people)
+            {
+                sum += person.Age;
+            }
+            double average = sum / (double) people.Count;
             Console.WriteLine("Average age is: " + average);
-
-            
 
             Console.ReadLine();
 

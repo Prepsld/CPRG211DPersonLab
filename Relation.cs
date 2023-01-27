@@ -32,8 +32,8 @@ namespace CPRG211DPersonLab
         public override string ToString()
         {
             string formatted;
-            formatted = Person1.FirstName + "is a " + Person1Relation + "\n";
-            formatted += Person2.FirstName + "is a " + Person2Relation + "\n";
+            formatted = Person1.FirstName + " is a " + Person1Relation + "\n";
+            formatted += Person2.FirstName + " is a " + Person2Relation + "\n";
             return formatted;
         }
     }
