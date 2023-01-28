@@ -74,24 +74,3 @@ namespace CPRG_213lab
         } 
     }
 }
-
-
-
-//public string ToString () { string formatted = ""; formatted += "ID:" + id + "\n"; formatted += "First Name:" + firstName +"\n"; return formatted;  }
-
-//Due before start of next lab
-//This WILL be graded
-//10% of final grade will be labs
-
-/* DisplayPersonInfo: accepts six person attributes and displays name=Firname and lastname
- * personId: names favorite color is favoritecolor
- * changefavoritecolour: changes persons favorite color to white
- * getageintenyears: gets the persons age after ten years
- * tostringmethod: displays all person object information as a list
- */
-
-//string.Format(asdasdasd {0} etc"
-// Relation Class - skip this part for now
-//&& means AND statement
-//format = $("Id = {id})
-//Get is for field, set is setting value of field
